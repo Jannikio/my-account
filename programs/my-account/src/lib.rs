@@ -8,6 +8,7 @@ pub mod my_account {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
+        ctx.accounts.my_account.data = 1;
         Ok(())
     }
 }
